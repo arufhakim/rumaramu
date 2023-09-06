@@ -1,0 +1,1248 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Background color*/
+.bg-pink {
+    background-color: #f9e7e7;
+}
+.bg-navy {
+    background-color: #42495b;
+}
+.bg-pink-tua {
+    background-color: #c19c9c;
+}
+.bg-abu {
+    background-color: #e4e4e4;
+}
+
+/* Item color*/
+.item-w {
+    color: white;
+}
+.item-d {
+    color: #42495b;
+}
+.item-p {
+    color: #f9e7e7;
+}
+.item-pd {
+    color: #c19c9c;
+}
+
+/* Header */
+.head {
+    background-image: url("/img/Wedding.jpg");
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+header {
+    position: relative;
+    height: 120px;
+    z-index: 1;
+}
+.w-hov:hover {
+    color: #c19c9c;
+}
+.logo {
+    text-align: center;
+    margin: 2% 0;
+}
+.head .container-r .logo .hero img {
+    width: 40%;
+}
+.menu-bar {
+    text-align: center;
+}
+.menu-bar ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    list-style: none;
+}
+.menu-bar ul li {
+    width: auto;
+    margin: 0 10%;
+    text-align: left;
+}
+.menu-bar ul li a {
+    transition: all 0.2s ease 0s;
+    font-size: 1.15rem;
+}
+.active {
+    color: #f9e7e7;
+}
+.sub {
+    display: none;
+}
+.menu-bar ul li:hover .sub {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+.menu-bar ul li:hover .sub ul {
+    display: block;
+}
+.menu-bar ul li:hover .sub ul li {
+    margin: 15% 0;
+    text-align: left;
+}
+.p-jumbo {
+    margin: -10% 0 0 0;
+    width: 100%;
+    line-height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.p-jumbo h1 {
+    width: 40%;
+    font-size: 3rem;
+    text-align: center;
+}
+.p-jumbo .search-box {
+    text-align: center;
+    width: 100%;
+    margin: 1% 0;
+}
+.p-jumbo .search-box form {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.p-jumbo .search-box .search-txt {
+    font-size: 1.15rem;
+    height: 0.8rem;
+    width: 20%;
+    padding: 1rem 1rem;
+    border: none;
+    outline: none;
+}
+.p-jumbo .search-box .search-btn {
+    position: relative;
+    border: none;
+    height: 2.8rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Body */
+.isi {
+    height: auto;
+    width: 100%;
+}
+
+/* Temukan Souvenir */
+.tem-sov {
+    width: 100%;
+    padding: 5% 0;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tem-sov div {
+    width: 50vw;
+    height: auto;
+    margin: 0% 5%;
+}
+.tem-sov .judul {
+    width: 25%;
+}
+.tem-sov .intro {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.tem-sov div h3 {
+    font-size: 2.25rem;
+}
+.tem-sov div h6 {
+    font-size: 1.1rem;
+    width: 60%;
+}
+.tem-sov div .lengkap {
+    padding: 0.5em 1em;
+    width: 7em;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 2% 0;
+    border-radius: 0.5rem;
+}
+.tem-sov div .lengkap:hover {
+    background-color: #c19c9c;
+    color: #42495b;
+}
+
+/* Keunggulan Rumaramu */
+.ke-ru {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: auto;
+}
+.ke-ru div {
+    width: 50vw;
+}
+.ke-ru .judul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ke-ru .judul div {
+    height: auto;
+    width: 70%;
+}
+.ke-ru .judul div h1 {
+    font-size: 3rem;
+}
+.ke-ru .judul div p {
+    font-size: 1.17rem;
+}
+.ke-ru .konten {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: white;
+    padding: 2% 2%;
+}
+.ke-ru .konten .bungkus {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 23rem;
+    height: 30rem;
+    margin: 1% 1%;
+}
+.ke-ru .konten div .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 18rem;
+    height: 25rem;
+    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.16);
+}
+.ke-ru .konten div .item h3 {
+    font-size: 1.5rem;
+}
+.ke-ru .konten div .item p {
+    font-size: 0.85rem;
+    width: 80%;
+}
+.ke-ru .konten div .bg {
+    z-index: 1;
+    height: 1rem;
+    width: 18rem;
+    position: relative;
+    top: 0.5rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+.ke-ru .konten div .item i {
+    font-size: 7rem;
+    margin: 16% 0;
+}
+
+/* Produk Unggulan */
+.pro-ung {
+    margin: 5% 10% 0 10%;
+    width: 80%;
+}
+.pro-ung .atas h1 {
+    font-size: 2.25em;
+}
+.pro-ung .atas h6 {
+    font-size: 1.15rem;
+}
+.pro-ung .baris {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.pro-ung .baris .item {
+    width: 25em;
+    height: 40rem;
+    text-align: center;
+    margin: 1% 1%;
+    line-height: 2.5em;
+    box-shadow: 0px 3px 5px 3px rgba(0, 0, 0, 0.16);
+}
+.pro-ung .baris .item img {
+    width: 25em;
+    height: 25em;
+}
+.pro-ung .baris .item p {
+    font-size: 1.2em;
+}
+.pro-ung .baris .item h1 {
+    font-size: 1.65em;
+    font-weight: 900;
+}
+.pro-ung .baris .item .lengkap {
+    border: none;
+    width: 45%;
+    color: black;
+    padding: 0.5em 1em;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 2em 0em;
+    border-radius: 2em;
+}
+.pro-ung .baris .item .lengkap:hover {
+    background-color: #c19c9c;
+    color: #42495b;
+}
+/* Kategori Produk */
+.kat-pro {
+    padding: 3% 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    width: 80%;
+    margin: 5% 5%;
+}
+.kat-pro .desc {
+    width: 50%;
+}
+.kat-pro .desc h1 {
+    font-size: 2.25em;
+}
+.kat-pro .desc p {
+    font-size: 1.15em;
+    margin: 1% 0;
+}
+.kat-pro .desc .lengkap {
+    border: none;
+    width: 50%;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    font-size: 1.15em;
+    display: inline-flex;
+    justify-content: center;
+    margin: 2em 0em;
+    border-radius: 0.5rem;
+}
+.kat-pro .desc .lengkap:hover {
+    background-color: #c19c9c;
+    color: #42495b;
+}
+.kat-pro .pro {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+.kat-pro .pro .item {
+    width: 20rem;
+    height: 20rem;
+    text-align: center;
+    margin: 1% 1%;
+    cursor: pointer;
+    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.16);
+    display: flex;
+    flex-direction: column;
+}
+.kat-pro .pro .item:hover {
+    background-color: black;
+}
+.kat-pro .pro .item img {
+    width: 20rem;
+    height: 20rem;
+    z-index: 0;
+    opacity: 0.6;
+}
+.kat-pro .pro .item h1 {
+    font-size: 2.5em;
+    z-index: 1;
+    margin: -60% 0 0 -1%;
+}
+
+/* Tentang Kami */
+.te-ka {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.te-ka .bg-navy {
+    height: auto;
+    width: 38%;
+    text-align: center;
+    padding: 2%;
+}
+.te-ka .bg-navy h1 {
+    font-size: 3em;
+}
+.te-ka .bag {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.te-ka .bag .photo {
+    margin: 0 3% 0 3%;
+    width: 30%;
+}
+.te-ka .bag .photo img {
+    width: 90%;
+    height: 100%;
+}
+.te-ka .bag .jelas {
+    width: 40%;
+}
+.te-ka .bag .jelas h1 {
+    margin: 15% 0 0 0;
+}
+.te-ka .bag .jelas p,
+.te-ka .bag .jelas .lengkap {
+    margin: 1% 0;
+}
+.te-ka .bag .jelas h1 {
+    font-size: 3rem;
+    line-height: 1em;
+}
+.te-ka .bag .jelas p {
+    font-size: 1.15em;
+    width: 80%;
+}
+.te-ka .bag .jelas .lengkap {
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0.5em 1em;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    display: inline-flex;
+}
+.te-ka .bag .jelas .lengkap:hover {
+    background-color: #42495b;
+}
+.te-ka .sosial {
+    margin: 0 0 0 15%;
+    width: 85%;
+    overflow-x: none;
+    height: auto;
+    padding: 2% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.te-ka .sosial h1 {
+    font-size: 2.25rem;
+}
+.te-ka .sosial ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.te-ka .sosial ul li {
+    margin-top: 1em;
+    display: inline-flex;
+}
+.te-ka .sosial ul li a {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.te-ka .sosial ul li a:hover {
+    background-color: white;
+    color: #42495b;
+}
+.te-ka .sosial ul li a i {
+    font-size: 2em;
+}
+
+/* Testimoni */
+.tes {
+    margin: 20% 0 0 0;
+}
+.tes .atas {
+    height: 20vh;
+    background: white;
+}
+.tes .bawah {
+    height: 25vh;
+    display: flex;
+    flex-direction: row;
+}
+.tes .bawah .pembungkus {
+    display: flex;
+    height: 25rem;
+    width: 100%;
+    overflow: hidden;
+    transform: translate(0%, -50%);
+    margin: 0 10%;
+}
+.tes .bawah .pembungkus .hi-slide {
+    margin: 5% 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+.tes .bawah .pembungkus .hi-slide .hi-next,
+.tes .bawah .pembungkus .hi-slide .hi-prev {
+    width: 1em;
+    height: 2em;
+    line-height: 1em;
+    font-size: 4em;
+    font-weight: bold;
+    margin: 17% 0 0 0;
+    z-index: 1;
+}
+.tes .bawah .pembungkus .hi-slide .hi-next i,
+.tes .bawah .pembungkusi .hi-slide .hi-prev i {
+    cursor: pointer;
+}
+.tes .bawah .pembungkus .hi-slide ul {
+    list-style: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.tes .bawah .pembungkus .hi-slide ul li {
+    overflow: hidden;
+    z-index: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+}
+.tes .bawah .pembungkus .photo {
+    margin: 0 5% 0 0%;
+}
+.tes .bawah .pembungkus .photo img {
+    width: 15em;
+    height: 15em;
+    border-radius: 10em;
+}
+.tes .bawah .pembungkus .isi {
+    margin: 16% 0 0 0;
+    width: 100%;
+}
+.tes .bawah .pembungkus .isi .pesan {
+    font-size: 1em;
+    width: 100%;
+    word-wrap: break-word;
+}
+.tes .bawah .pembungkus .isi .nama {
+    font-size: 0.85em;
+    word-wrap: break-word;
+}
+.tes .bawah .pembungkus .isi .jabatan {
+    font-size: 0.75em;
+}
+
+/* Foot */
+
+.footer {
+    bottom: 0;
+    margin-top: -10px;
+    padding: 0;
+    height: auto;
+    width: 100%;
+    background: #f9e7e7;
+}
+.footer .container-f .left a img {
+    width: 30%;
+    margin-left: 1rem;
+}
+.footer .content {
+    margin: 0px;
+    padding: 0 20px;
+}
+
+.footer .content p {
+    font-size: 14px;
+}
+
+.footer .content h3 {
+    color: #9697a0;
+    font-size: 20px;
+}
+
+.footer .content ul li {
+    margin: 10px 0;
+}
+
+.footer .content ul li a {
+    font-size: 13px;
+}
+
+.footer .content ul li a i {
+    width: 25px;
+    height: 25px;
+    margin: 0 1px;
+    font-size: 1.15em;
+}
+
+.footer .container-f {
+    display: flex;
+    justify-content: center;
+    padding: 3% 3% 0% 0%;
+    margin: 10px 0 0 15px;
+    flex-wrap: wrap;
+}
+
+.footer .box .content ul h3 {
+    color: #c19c9c;
+}
+
+.footer .box .content ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+.footer .box .content ul li a {
+    color: #000000;
+}
+
+.footer .left {
+    width: 45%;
+}
+
+.footer .middle {
+    width: 10%;
+    margin: 0 0 0 20%;
+}
+
+.footer .right {
+    width: 25%;
+}
+
+/* RESPONSIVE LAYOUT */
+
+@media screen and (max-width: 1240px) {
+    /* Testimoni */
+    .tes .bawah {
+        height: 20vh;
+    }
+    .tes .bawah .pembungkus .hi-slide {
+        width: 100%;
+    }
+    .tes .bawah .pembungkus .hi-slide .hi-next,
+    .tes .bawah .pembungkus .hi-slide .hi-prev {
+        margin: 20% 0 0 0;
+    }
+    .tes .bawah .pembungkus .photo img {
+        width: 10em;
+        height: 10em;
+    }
+    .tes .bawah .pembungkus .isi {
+        margin: 7% 0 0 0;
+        width: 80%;
+    }
+    .tes .bawah .pembungkus .isi .pesan {
+        font-size: 0.85em;
+        width: 90%;
+        margin: 0% 0 5% 0;
+    }
+    .tes .bawah .pembungkus .isi .nama {
+        font-size: 0.75em;
+    }
+    .tes .bawah .pembungkus .isi .jabatan {
+        font-size: 0.75em;
+    }
+    .tes .bawah .pembungkus .hi-slide ul {
+        height: 30%;
+    }
+}
+
+/* Tablet */
+
+@media screen and (max-width: 1024px) {
+    /* Header */
+    header .menu-bar ul li {
+        margin: 0 5%;
+    }
+    header .menu-bar ul li a {
+        font-size: 1.25rem;
+    }
+    .p-jumbo {
+        margin: -80% 0 0 0;
+    }
+    .p-jumbo h1 {
+        font-size: 2.45rem;
+        width: 65%;
+    }
+    .p-jumbo .search-box form {
+        width: 100%;
+    }
+    .p-jumbo .search-box .search-txt {
+        width: 40%;
+        font-size: 1.15rem;
+        height: 0.5rem;
+    }
+    .p-jumbo .search-box .search-btn {
+        height: 2.6rem;
+        width: 2.6rem;
+    }
+    .p-jumbo .search-box .search-btn i {
+        font-size: 1rem;
+    }
+
+    /* Temukan Souvenir */
+    .tem-sov div h3 {
+        font-size: 1.65rem;
+    }
+    .tem-sov div h6 {
+        font-size: 0.85rem;
+        width: 100%;
+    }
+    .tem-sov div .lengkap {
+        width: 30%;
+        font-size: 0.85rem;
+    }
+
+    /*Keunggulan Ruamramu */
+    .ke-ru {
+        flex-direction: column;
+        background: white;
+    }
+    .ke-ru .judul {
+        width: 100vw;
+        height: 20vh;
+        background: #42495b;
+    }
+    .ke-ru .judul div h1 {
+        font-size: 2.25rem;
+    }
+    .ke-ru .judul div p {
+        font-size: 1.25rem;
+    }
+    .ke-ru .konten {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .ke-ru .konten .bungkus {
+        height: 25rem;
+        width: auto;
+    }
+    .ke-ru .konten .bungkus .bg {
+        width: auto;
+    }
+    .ke-ru .konten div .item {
+        width: 22rem;
+        height: 25rem;
+    }
+    .ke-ru .konten div .item h3 {
+        font-size: 1.65rem;
+    }
+    .ke-ru .konten div .item p {
+        font-size: 1.15rem;
+        width: 80%;
+    }
+    .ke-ru .konten div .bg {
+        width: 14rem;
+    }
+    .ke-ru .konten div .item img {
+        width: 14rem;
+        height: 14rem;
+        margin-bottom: 5%;
+    }
+
+    /* Produk Unggulan */
+    .pro-ung .atas {
+        border-top: 2px solid #c19c9c;
+    }
+    .pro-ung .atas h1 {
+        font-size: 2.75rem;
+        margin-top: 5%;
+    }
+    .pro-ung .atas h6 {
+        font-size: 1.55rem;
+    }
+    .pro-ung .baris .item {
+        margin: 5% 1%;
+        width: 15rem;
+        height: 30rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .pro-ung .baris .item img {
+        width: 15em;
+        height: 10em;
+    }
+    .pro-ung .baris .item p {
+        font-size: 1.25em;
+    }
+    .pro-ung .baris .item h1 {
+        font-size: 1.55em;
+        font-weight: 900;
+    }
+    .pro-ung .baris .item .lengkap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 60%;
+        font-size: 1.15em;
+        height: 1rem;
+        padding: 0.8em;
+    }
+
+    /* Kategori Produk */
+    .kat-pro {
+        padding: 10% 5%;
+    }
+    .kat-pro .pro .item {
+        margin: 5% 5%;
+    }
+    .kat-pro .desc {
+        width: 60%;
+    }
+    .kat-pro .desc h1 {
+        font-size: 2.75rem;
+    }
+    .kat-pro .desc p {
+        font-size: 1.25rem;
+    }
+    .kat-pro .desc .lengkap {
+        width: 40%;
+        font-size: 1.25em;
+        margin: 1em 0em;
+    }
+
+    /* Tentang Kami */
+    .te-ka {
+        width: 100%;
+    }
+    .te-ka .bag {
+        width: 100%;
+    }
+    .te-ka .bag .jelas h1 {
+        font-size: 2.75rem;
+    }
+    .te-ka .bag .jelas p {
+        width: 110%;
+        font-size: 1.25rem;
+    }
+    .te-ka .bag .jelas .lengkap {
+        margin: 5% 0;
+        font-size: 1.25rem;
+    }
+
+    /* Testimoni */
+    .tes .atas {
+        height: 10vh;
+    }
+    .tes .bawah {
+        height: 20vh;
+    }
+    .tes .bawah .pembungkus .hi-slide {
+        width: 100%;
+    }
+    .tes .bawah .pembungkus .hi-slide .hi-next,
+    .tes .bawah .pembungkus .hi-slide .hi-prev {
+        margin: 40% 0 0 0;
+    }
+    .tes .bawah .pembungkus .photo img {
+        width: 10em;
+        height: 10em;
+    }
+    .tes .bawah .pembungkus .isi {
+        margin: 12% 0 0 0;
+        width: 50%;
+    }
+    .tes .bawah .pembungkus .isi .pesan {
+        font-size: 0.85em;
+        width: 90%;
+        margin: 0% 0 10% 0;
+    }
+    .tes .bawah .pembungkus .isi .nama {
+        font-size: 0.75em;
+    }
+    .tes .bawah .pembungkus .isi .jabatan {
+        font-size: 0.75em;
+    }
+    .tes .bawah .pembungkus .hi-slide ul {
+        height: 30%;
+    }
+
+    /* Footer */
+    .footer .left {
+        width: 30%;
+    }
+    .footer .middle {
+        width: 20%;
+        margin: 0 0 0 10%;
+    }
+    .footer .right {
+        width: 30%;
+    }
+    .footer .container-f .left a img {
+    width: 50%;
+    margin-left: 0rem;
+    }
+    .footer .content {
+        margin: 0;
+        padding: 0 0;
+    }
+    .footer .content p {
+        font-size: 15px;
+    }
+    .footer .content h3 {
+        font-size: 25px;
+    }
+    .footer .content ul li {
+        margin: 0px 0px;
+    }
+    .footer .content ul li a {
+        font-size: 12px;
+    }
+    .footer .content ul li a i {
+        font-size: 1em;
+        margin: 0 0;
+    }
+    .footer .container-f {
+        padding: 10px 0;
+        margin: 0;
+    }
+}
+
+/* Mobile 425 */
+
+@media screen and (max-width: 425px) {
+    /* Header */
+    header .menu-bar ul li {
+        margin: 0 3%;
+    }
+    header .menu-bar ul li a {
+        font-size: 0.75rem;
+    }
+    .p-jumbo {
+        margin: -100% 0 0 0;
+    }
+    .p-jumbo h1 {
+        font-size: 1.65rem;
+        line-height: 1.5em;
+        width: 80%;
+    }
+    .p-jumbo .search-box form {
+        width: 100%;
+        margin-top: 5%;
+    }
+    .p-jumbo .search-box .search-txt {
+        width: 40%;
+        font-size: 0.85rem;
+        height: 0.2rem;
+    }
+    .p-jumbo .search-box .search-btn {
+        height: 2.3rem;
+        width: 2.4rem;
+    }
+
+    /* Temukan Souvenir */
+    .tem-sov div h3 {
+        font-size: 0.85rem;
+    }
+    .tem-sov div h6 {
+        font-size: 0.6rem;
+        width: 100%;
+    }
+    .tem-sov div .lengkap {
+        margin-top: 10%;
+        width: 50%;
+        font-size: 0.6rem;
+    }
+
+    /*Keunggulan Ruamramu */
+    .ke-ru {
+        flex-direction: column;
+        background: white;
+    }
+    .ke-ru .judul {
+        width: 100vw;
+        height: 40vh;
+        background: #42495b;
+    }
+    .ke-ru .judul div h1 {
+        font-size: 0.95rem;
+    }
+    .ke-ru .judul div p {
+        font-size: 0.85rem;
+    }
+    .ke-ru .konten .bungkus {
+        height: 25rem;
+    }
+    .ke-ru .konten div .item {
+        width: 14rem;
+        height: 22rem;
+    }
+    .ke-ru .konten div .item h3 {
+        font-size: 1.25rem;
+    }
+    .ke-ru .konten div .item p {
+        font-size: 0.65rem;
+        width: 80%;
+    }
+    .ke-ru .konten div .bg {
+        width: 14rem;
+    }
+    .ke-ru .konten div .item img {
+        width: 14rem;
+        height: 14rem;
+        margin-bottom: 5%;
+    }
+
+    /* Produk Unggulan */
+    .pro-ung .atas {
+        border-top: 1px solid #c19c9c;
+    }
+    .pro-ung .atas h1 {
+        font-size: 1.55rem;
+        margin-top: 10%;
+    }
+    .pro-ung .atas h6 {
+        font-size: 0.95rem;
+    }
+    .pro-ung .baris .item {
+        margin: 5% 1%;
+        width: 15rem;
+        height: 25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .pro-ung .baris .item img {
+        width: 15em;
+        height: 12em;
+    }
+    .pro-ung .baris .item p {
+        font-size: 0.85em;
+    }
+    .pro-ung .baris .item h1 {
+        font-size: 1.05em;
+        font-weight: 900;
+    }
+    .pro-ung .baris .item .lengkap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 45%;
+        font-size: 0.75em;
+        height: 1rem;
+        padding: 0.8em;
+    }
+
+    /* Kategori Produk */
+    .kat-pro .desc {
+        width: 80%;
+    }
+    .kat-pro .desc h1 {
+        font-size: 1.55rem;
+    }
+    .kat-pro .desc p {
+        font-size: 0.85rem;
+    }
+    .kat-pro .pro .item {
+        margin: 5% 5%;
+    }
+    .kat-pro .desc .lengkap {
+        width: 50%;
+        font-size: 0.85em;
+        margin: 1em 0em;
+    }
+
+    /* Tentang Kami */
+    .te-ka {
+        width: 100%;
+    }
+    .te-ka .bg-navy {
+        width: 50%;
+    }
+    .te-ka .bg-navy h1 {
+        font-size: 1.55rem;
+    }
+    .te-ka .bag {
+        width: 100%;
+        flex-direction: column;
+    }
+    .te-ka .bag .photo {
+        margin-top: 5%;
+    }
+    .te-ka .bag .photo img {
+        width: 17rem;
+        height: 100%;
+    }
+    .te-ka .bag .jelas {
+        margin: 0 10%;
+        width: 80%;
+    }
+    .te-ka .bag .jelas h1 {
+        font-size: 1.25rem;
+    }
+    .te-ka .bag .jelas p {
+        margin: 5% 0 0 0;
+        width: 90%;
+        font-size: 0.85rem;
+        text-align: justify;
+    }
+    .te-ka .bag .jelas .lengkap {
+        margin: 5% 0;
+    }
+    .te-ka .sosial h1 {
+        font-size: 1.25rem;
+    }
+    .te-ka .sosial ul li a {
+        height: 2.5rem;
+        width: 2.5rem;
+        margin: 0.5rem;
+    }
+    .te-ka .sosial ul li a i {
+        font-size: 1.25em;
+    }
+
+    /* Testimoni */
+    .tes .bawah {
+        height: auto;
+    }
+    .tes .bawah .pembungkus {
+        height: auto;
+        transform: translate(0%, -25%);
+    }
+    .tes .bawah .pembungkus .hi-slide {
+        width: 800%;
+    }
+    .tes .bawah .pembungkus .hi-slide .hi-next,
+    .tes .bawah .pembungkus .hi-slide .hi-prev {
+        margin: 50% 0 0 0;
+        font-size: 2em;
+    }
+    .tes .bawah .pembungkus .photo img {
+        width: 5em;
+        height: 5em;
+        transform: translate(0%, 40%);
+    }
+    .tes .bawah .pembungkus .isi {
+        margin: 15% 0 0 0;
+        width: 45%;
+        transform: translate(0%, -10%);
+    }
+    .tes .bawah .pembungkus .isi .pesan {
+        font-size: 0.45em;
+        width: 90%;
+    }
+    .tes .bawah .pembungkus .isi .nama {
+        font-size: 0.35em;
+    }
+    .tes .bawah .pembungkus .isi .jabatan {
+        font-size: 0.35em;
+    }
+    .tes .bawah .pembungkus .hi-slide ul {
+        height: 30%;
+    }
+
+    /* Footer */
+    .footer .left {
+        width: 20%;
+    }
+    .footer .middle {
+        width: 25%;
+        margin: 0 0 0 10%;
+    }
+    .footer .right {
+        width: 35%;
+    }
+    .footer .content {
+        margin: 0;
+        padding: 0 0;
+    }
+    .footer .container-f .left a img {
+    width: 100%;
+    margin-left: 0rem;
+    }
+    .footer .content p {
+        font-size: 8px;
+    }
+    .footer .content h3 {
+        font-size: 15px;
+    }
+    .footer .content ul li {
+        margin: 0px 0px;
+    }
+    .footer .content ul li a {
+        font-size: 8px;
+    }
+    .footer .content ul li a i {
+        font-size: 1em;
+        width: 15px;
+        height: 15px;
+        margin: 0 0;
+    }
+    .footer .container-f {
+        padding: 10px 0;
+        margin: 0;
+    }
+}

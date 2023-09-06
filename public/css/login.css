@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+    background: url(/img/Wedding.jpg);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.coloumn{
+    width: auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content h1{
+    color: #F9E7E7;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.content span{
+    color: #C19C9C;
+}
+
+.alert{
+    text-align: center;
+    border: none;
+}
+.close{
+    top: 0;
+    right: 0;
+    margin-top: 15px;
+    margin-right: 20px;
+    color: #6E6E6E;
+}
+
+.box{
+    width: 360px;
+    background-color: #F2F2F2;
+    border-radius: 5px;
+    padding: 3em 3em 1em 3em;
+}
+
+.input-div{
+    position: relative;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    margin: 25px 0;
+    padding: 5px 0;
+    border-bottom: 2px solid #D9D9D9;
+}
+
+.input-div:after, .input-div:before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #42495B;
+    transition: .3s;
+}
+
+.input-div:after{
+    right: 50%;
+}
+
+.input-div:before{
+    left: 50%;
+}
+
+.input-div.focus .i i{
+    color:#42495B;
+}
+
+.input-div.focus div h5{
+    top: -5px;
+    font-size: 15px;
+}
+
+.input-div.focus:after, .input-div.focus:before{
+    width: 50%;
+}
+
+.input-div.username{
+    margin-top: 0;
+}
+
+.input-div.password{
+    margin-bottom: 4px;
+}
+
+
+.i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.i i{
+    color: #D9D9D9;
+    transition: .3s;
+}
+
+.input-div > div{
+    position: relative;
+    height: 45px;
+}
+
+.input-div > div h5{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 18px;
+    transition: .3s;
+}
+
+.input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0.5rem 0.7rem;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.btn{
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    margin: 1.5em 0;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    background-color: #42495B;
+    cursor: pointer;
+    color: #FFFFFF;
+    transition: .5s;
+}
+
+.btn:hover{
+    background-color: #F2F2F2;
+    color: #42495B;
+    border: 2px solid #42495B;
+}
+
+
+
+/* main{
+    height: 100%;
+    width: 100%;
+}
+
+.row-l{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.coloumn{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.section{
+    display: block;
+    padding: 30px;
+    width:30%;    
+    border-radius: .4rem;
+    background-color: #F7EDED;
+    box-shadow: .1rem .3rem .7rem .8rem rgba(0,0,0,.1);
+}
+
+.section .close{
+    right: 20px;
+    font-size: x-large;
+}
+
+@media screen and (max-width:960px) {
+    .section{
+        width: 45%;
+    }
+}
+
+/* ukuran tablet */
+/* @media screen and (max-width:768px) {
+    .section{
+        width: 60%;
+    }
+} */
+
+/* ukuran mobile */
+/* @media screen and (max-width:576px) {
+    .menu-toggle{
+        width: 90%;
+    }
+} */ 
